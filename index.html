@@ -1,88 +1,131 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!--360 webkit-->
-    <meta name="renderer" content="webkit">
-    <!--Baidu no-transform-->
-    <meta http-equiv="Cache-Control" content="no-transform " />
-    <!--No user-scalable-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-    <title>Hi Sam</title>
-    <link href="fav.png" rel="apple-touch-icon" />
-    <link rel="icon" href="fav.png" type="image/x-icon"/>
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.2/animate.css">
-    <style type="text/css">
-    * {
-        font-family:source-han-sans-traditional,PingHei,'PingFang SC','Helvetica Neue',Helvetica,STHeitiSC-Light,sans-serif;
-    }
-    .met-online {
-    display: none;
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    z-index: 100;
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--360 webkit-->
+<meta name="renderer" content="webkit">
+<!--Baidu no-transform-->
+<meta http-equiv="Cache-Control" content="no-transform " />
+<!--No user-scalable-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+<title>Hi Sam</title>
+<link href="fav.png" rel="apple-touch-icon" />
+<link rel="icon" href="fav.png" type="image/x-icon"/>
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.2/animate.css">
+<style type="text/css">
+* {
+    font-family:source-han-sans-traditional,PingHei,'PingFang SC','Helvetica Neue',Helvetica,STHeitiSC-Light,sans-serif;
+}
+.met-online {
+display: none;
+position: fixed;
+right: 10px;
+bottom: 10px;
+z-index: 100;
+overflow: hidden;
+}
+.met-online ul.blocks {
+    margin: 0;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     overflow: hidden;
-    }
-    .met-online ul.blocks {
-        margin: 0;
-        transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        overflow: hidden;
-    }
-    .met-online ul.blocks.hidebacktop {
-        margin-bottom: -36px;
-    }
-    .met-online ul.blocks li {
-        clear: both;
-        margin-bottom: 5px;
+}
+.met-online ul.blocks.hidebacktop {
+    margin-bottom: -36px;
+}
+.met-online ul.blocks li {
+    clear: both;
+    margin-bottom: 5px;
 
-    }
-    .met-online ul.blocks li button{
-        border: none;
-        background-color: rgba(64, 150, 238, 0.95);
-        padding: 0;
-        width: 35px;
-        height: 35px;
-    }
-    .met-online ul.blocks li button:hover{
-        transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        background-color: rgba(64, 150, 238, 0.75);
-    }
-    </style>
-</head>
-<body>
-<div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+}
+.met-online ul.blocks li button{
+    border: none;
+    background-color: rgba(64, 150, 238, 0.95);
+    padding: 0;
+    width: 35px;
+    height: 35px;
+}
+.met-online ul.blocks li button:hover{
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    background-color: rgba(64, 150, 238, 0.75);
+}
 /*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://suxiaogang.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+ * Homepage
+ *
+ * Tweaks to the custom homepage and the masthead (main jumbotron).
+ */
+/* Share masthead with page headers */
+.bs-docs-masthead,
+.bs-docs-header {
+  position: relative;
+  padding: 30px 0;
+  color: #cdbfe3;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0,0,0,.1);
+  background-color: #6f5499;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#563d7c), to(#6f5499));
+  background-image: -webkit-linear-gradient(top, #563d7c 0%, #6f5499 100%);
+  background-image:      -o-linear-gradient(top, #563d7c 0%, #6f5499 100%);
+  background-image:         linear-gradient(to bottom, #563d7c 0%, #6f5499 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+  background-repeat: repeat-x;
+}
+.bs-docs-masthead h1 {
+  font-weight: 300;
+  line-height: 1;
+  color: #fff;
+}
+</style>
+</head>
+<body>   
+<!-- Docs page layout -->
+<div class="bs-docs-header" id="content" tabindex="-1">
+    <div class="container">
+        <h1>Hi there</h1>
+        <p>if you have any questions, plz leave me a message here.</p>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12 wow fadeInDown animated" data-wow-delay="0s" data-wow-duration="1s">
+            <div id="disqus_thread"></div>
+            <script>
+            
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://suxiaogang.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+    </div>
+</div>
+
 <div class="met-online">
     <ul class="blocks list-unstyled">
         <li class="shou_qian_zi_xun"><button type="button" class="btn btn-icon btn-info" onclick="goTop();"><i class="fa fa-commenting" aria-hidden="true"></i></li>
